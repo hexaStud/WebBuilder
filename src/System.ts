@@ -225,5 +225,4 @@ export namespace System {
             return element;
         }
     }
-
 }
