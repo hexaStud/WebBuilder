@@ -31,29 +31,29 @@
 
 ## About The Project
 
-There are many Tools like React, Angular to create modern Website or Interfaces, but all these tools are bind to the HTML structure.
+There are many tools like React, Angular to create modern website or interfaces, but all of those tools are bound to the HTML structure.
 
-With WebBuilder you can easily create and manage interfaces through Typescript.
+With WebBuilder you can easily create and manage interfaces using Typescript.
 
 ## Built With
 
-Typescript
+Typescript  
 SASS
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is an example of how to set up your project locally.  
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-Download the source code and copy it to your project root
+Clone the source code and copy it to your project root
 
 ### Installation
 
-1. Create a simple index.html file into your project the file can be in a subdirectory
+1. Create a simple index.html file inside your project root directory (of course you can also create it inside a subdirectory but for simplicity this example will have the file located in the root directory)
 
-2. Copy the file Template into the file
+2. Copy the HTML template into your file
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -72,9 +72,9 @@ Download the source code and copy it to your project root
 </html>
 ```
 
-3. Create your main typescript file and change the path in the index.html script import
+3. Create your main Typescript file and adjust the path of the import in your index.html if needed.
 
-The typescript file should contain the hexa-studio oop index point
+The Typescript file should follow the conventions of the *hexa-studio OOP* template.
 
 ```
 import {WebBuilder} from "../src/WebBuilder.js";
@@ -92,10 +92,10 @@ export namespace Program {
 
 ```
 
-*Note*: Change the import paths of your Typescript file
+*Note*: Adjust the import paths of your Typescript file if neccessary.
 
 
-4. Create your first WebRout Class
+4. Create your first WebRout implementation
 
 ```
 import {WebBuilder} from "../src/WebBuilder.js";
@@ -119,10 +119,10 @@ export class IndexRout extends WebRout {
 }
 ```
 
-The `start` method is for loading WebApp components.\
-The `render` method render all components and structures you use.
+The `start` method is called once when the WebApp component is initially constructed.  
+The `render` method is used to render all components and structures you use.
 
-5. Add your WebRout to your WebApp
+5. Add the newly created WebRout to your WebApp.
 
 Add following to your `static main` method
 
@@ -133,28 +133,29 @@ Add following to your `static main` method
     webapp.release();
 ```
 
-`WebApp.createLocking` creates a new WebApp instance\
-`webapp.addRout` adds a new path rout to your application
+`WebApp.createLocking` creates a new WebApp instance.  
+`webapp.addRout` adds a new path rout to your application.  
 * The first argument represents the path in your url bar
 * The seconds is the WebRout class name
 
-`webapp.release` releases the configuration part of your WebApp. After the release the Application start building.
+`webapp.release` releases the configuration side of your WebApp. After releasing the application will start building the DOM-Elements.
 
-*Note*: You can only add WebRouts when the WebApp is not released
+*Note*: You can only add WebRouts when the WebApp is not released yet.
 
 
 
 ## Contributing
 
-Pull Request are at any time welcome checkout the `src/System.ts` file and try to create your own components.
+Pull request are welcome at any time.  
+Checkout the `src/System.ts` file and try to create your own components.
 
 ### Creating A Pull Request
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull request
 
 ## License
 
