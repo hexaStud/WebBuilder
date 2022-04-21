@@ -4,13 +4,15 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">WebBuilder</h3>
+<h3 align="center">WebBuilder</h3>
 
   <p align="center">
     Create interfaces only with Typescript
     <br/>
     <br/>
     <a href="https://github.com/hexaStud/WebBuilder/issues">Report Bug</a>
+    .
+    <a href="https://github.com/hexaStud/WebBuilder/wiki">Wiki</a>
     .
     <a href="https://github.com/hexaStud/WebBuilder/issues">Request Feature</a>
   </p>
@@ -31,7 +33,8 @@
 
 ## About The Project
 
-There are many tools like React, Angular to create modern website or interfaces, but all of those tools are bound to the HTML structure.
+There are many tools like React, Angular to create modern website or interfaces, but all of those tools are bound to the
+HTML structure.
 
 With WebBuilder you can easily create and manage interfaces using Typescript.
 
@@ -51,9 +54,11 @@ Clone the source code and copy it to your project root
 
 ### Installation
 
-1. Create a simple index.html file inside your project root directory (of course you can also create it inside a subdirectory but for simplicity this example will have the file located in the root directory)
+1. Create a simple index.html file inside your project root directory (of course you can also create it inside a
+   subdirectory but for simplicity this example will have the file located in the root directory)
 
 2. Copy the HTML template into your file
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +99,6 @@ export namespace Program {
 
 *Note*: Adjust the import paths of your Typescript file if neccessary.
 
-
 4. Create your first WebRout implementation
 
 ```
@@ -134,15 +138,15 @@ Add following to your `static main` method
 ```
 
 `WebApp.createLocking` creates a new WebApp instance.  
-`webapp.addRout` adds a new path rout to your application.  
+`webapp.addRout` adds a new path rout to your application.
+
 * The first argument represents the path in your url bar
 * The seconds is the WebRout class name
 
-`webapp.release` releases the configuration side of your WebApp. After releasing the application will start building the DOM-Elements.
+`webapp.release` releases the configuration side of your WebApp. After releasing the application will start building the
+DOM-Elements.
 
 *Note*: You can only add WebRouts when the WebApp is not released yet.
-
-
 
 ## Contributing
 
@@ -159,8 +163,10 @@ Checkout the `src/System.ts` file and try to create your own components.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/hexaStud/WebBuilder/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/hexaStud/WebBuilder/blob/main/LICENSE.md) for more
+information.
 
 ## Authors
 
-* **Christoph Koschel** - *A passionate fullstack developer from Germany* - [Christoph Koschel](https://github.com/Christoph-Koschel) - *Build Core and added the system component*
+* **Christoph Koschel** - *A passionate fullstack developer from Germany*
+  - [Christoph Koschel](https://github.com/Christoph-Koschel) - *Build Core and added the system component*
